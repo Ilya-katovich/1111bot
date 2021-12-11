@@ -1,6 +1,7 @@
-import telebot
-from auth_data import token
 import webbrowser
+import telebot
+
+token = '2028872894:AAG6128fprnOu0sWKgnshXxfTbmAoF6_Bho'
 
 def get_data():
     req = webbrowser.open_new_tab('https://myfin.by/currency/moskva')
@@ -34,4 +35,4 @@ def telegram_bot(token):
 
 
 if __name__ == '__main__':
-    telegram_bot(token)
+     telegram_bot(token)
