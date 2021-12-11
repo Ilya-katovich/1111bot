@@ -1,11 +1,9 @@
-import requests
-from datetime import datetime
 import telebot
 from auth_data import token
 import webbrowser
 
 def get_data():
-    req = webbrowser.open_new_tab('https://myfin.by/api/currency/minsk')
+    req = webbrowser.open_new_tab('https://myfin.by/currency/moskva')
     print(req)
 
 
@@ -20,7 +18,7 @@ def telegram_bot(token):
     def send_text(message):
         if message.text.lower() == "many":
             try:
-                req = webbrowser.open_new_tab('https://myfin.by/api/currency/minsk')
+                req = webbrowser.open_new_tab('https://myfin.by/currency/moskva')
 
 
             except Exception as ex:
